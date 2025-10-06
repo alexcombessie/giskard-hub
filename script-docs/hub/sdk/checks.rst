@@ -31,7 +31,7 @@ You can now use the ``hub`` client to create, update, and delete checks.
 Built-in checks
 ---------------
 
-Giskard provides a set of built-in checks that you can use to evaluate your agents. These checks form the foundation of :ref:`custom-checks` but they can also be used independently as shown in :ref:`add-checks-to-conversations`.
+Giskard provides a set of built-in checks that you can use to evaluate your agents. These checks form the foundation of :ref:`custom-checks` but they can also be used independently as shown in :ref:`add-checks-to-chat-test-cases`.
 
 .. tip::
 
@@ -261,7 +261,7 @@ You can list all checks for a project using the ``hub.checks.list()`` method. He
         print(f"Description: {check.description}")
         print("---")
 
-.. _add-checks-to-conversations:
+.. _add-checks-to-chat-test-cases:
 
 Add checks to chat test cases
 -----------------------------
@@ -404,3 +404,4 @@ You can use a semantic similarity check to verify that the agent's response is s
             "reference": "The capital of France is Paris, which is located in the northern part of the country.",
             "threshold": 0.8
         }
+    )
